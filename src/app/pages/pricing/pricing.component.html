@@ -1,0 +1,367 @@
+<app-navbar></app-navbar>
+
+
+<!-- 1st pricing How can you help you -->
+<section class="pricing-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+        <img src="assets/images/pricing.png" alt="">
+      </div>
+      <div class="col-md-6">
+        <h1>Pricing</h1>
+        <p>Smart trading platform, great pricing with human support.
+          Get free equity investments and flat ₹20 intraday and F&O trades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of - 1st Section How can you help you -->
+<!--2nd section  Pricing Section -->
+<section>
+  <div class="container">
+    <app-pricing-card></app-pricing-card>
+  </div>
+</section>
+<!--End 2nd section  Pricing Section  -->
+
+
+<!-- 2nd section  tab table-->
+
+<section class="pricing-table">
+  <div class="container">
+    <div class="mb-3">
+      <ul class="nav nav-pills" id="myTab" role="tablist">
+        <li class="nav-item"><a class="nav-link active" id="equity-tab" data-toggle="tab" href="#equity" role="tab"
+            aria-controls="equity" aria-selected="true">Equity</a></li>
+        <li class="nav-item"><a class="nav-link" id="fo-tab" data-toggle="tab" href="#fo" role="tab" aria-controls="fo"
+            aria-selected="false">F & O</a></li>
+        <li class="nav-item"><a class="nav-link" id="commodity-tab" data-toggle="tab" href="#commodity" role="tab"
+            aria-controls="commodity" aria-selected="false">Commodity</a></li>
+        <li class="nav-item"><a class="nav-link" id="currency-tab" data-toggle="tab" href="#currency" role="tab"
+            aria-controls="currency" aria-selected="false">Currency</a></li>
+      </ul>
+    </div>
+    <div class="tab-content mb-4">
+      <div class="tab-pane fade show active" id="equity" role="tabpanel" aria-labelledby="equity-tab">
+        <table class="table table-bordered mt-5">
+          <thead>
+            <tr>
+              <th scope="col">Charges</th>
+              <th scope="col">Equity (Delivery)</th>
+              <th>Equity (Intraday)</th>
+              <th>Equity (MTF)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Brokerage</td>
+              <td>₹ 0 (Zero Brokerage)</td>
+              <td>₹ 20 or 0.25% which ever is lower</td>
+              <td>₹ 20 or 0.25% which ever is lower</td>
+            </tr>
+            <tr>
+              <td>Transaction charges</td>
+              <td>BSE: 0.00375% <br>
+                NSE: 0.00325%</td>
+              <td>BSE: 0.00375% <br>
+                NSE: 0.00325%</td>
+              <td>BSE: 0.00375% <br>
+                NSE: 0.00325%</td>
+            </tr>
+            <tr>
+              <td>GST</td>
+              <td>18% On Brokerage + Transaction Charges + Sebi TO</td>
+              <td>18% On Brokerage + Transaction Charges + Sebi TO</td>
+              <td>18% On Brokerage + Transaction Charges + Sebi TO</td>
+            </tr>
+            <tr>
+              <td>Securities Transaction Tax (STT)</td>
+              <td>0.1% on Buy & Sell</td>
+              <td>0.025% on Sell</td>
+              <td>0.1% on Buy & Sell</td>
+            </tr>
+            <tr>
+              <td>SEBI Turnover fees</td>
+              <td>0.0001% of the Turnover</td>
+              <td>0.0001% of the Turnover</td>
+              <td>0.0001% of the Turnover</td>
+            </tr>
+            <tr>
+              <td>Stamp Duty</td>
+              <td>0.015% on turnover of Buy Trades</td>
+              <td>0.003% on turnover of Buy Trades</td>
+              <td>0.015% on turnover of Buy Trades</td>
+            </tr>
+            <tr>
+              <td>IPFT</td>
+              <td>0.0001% per crore</td>
+              <td>0.0001% per crore</td>
+              <td>0.0001% per crore</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="fo" role="tabpanel" aria-labelledby="fo-tab">
+        <table class="table table-bordered mt-5">
+          <thead>
+            <tr>
+              <th scope="col" style="width:25%">Charges</th>
+              <th scope="col" style="width:35%">F & O (Futures)</th>
+              <th scope="col" style="width:35%">F & O (Options)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Brokerage</td>
+              <td>₹ 20 per order</td>
+              <td>₹ 20 per order</td>
+            </tr>
+            <tr>
+              <td>Transaction charges</td>
+              <td>BSE: 0.00% <br>
+                NSE: 0.0019%</td>
+              <td>BSE: 0.005% on premium<br>
+                NSE: 0.05% on premium</td>
+            </tr>
+            <tr>
+              <td>GST</td>
+              <td>18% On Brokerage + Transaction Charges + Sebi TO</td>
+              <td>18% On Brokerage + Transaction Charges + Sebi TO</td>
+            </tr>
+            <tr>
+              <td>Securities Transaction Tax (STT)</td>
+              <td>0.025% on Sell</td>
+              <td>0.125% of the intrinsic value on options that are bought and exercised 0.0625% on sell side (on
+                premium)</td>
+            </tr>
+            <tr>
+              <td>SEBI Turnover fees</td>
+              <td>0.0001% of the Turnover</td>
+              <td>0.0001% of the Turnover</td>
+            </tr>
+            <tr>
+              <td>Stamp Duty</td>
+              <td>0.002% on turnover of Buy Trades</td>
+              <td>0.003% on turnover of Buy Trades</td>
+            </tr>
+            <tr>
+              <td>IPFT</td>
+              <td>0.0005% per crore</td>
+              <td>0.0005% per crore</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="commodity" role="tabpanel" aria-labelledby="commodity-tab">
+        <table class="table table-bordered mt-5">
+          <thead>
+            <tr>
+              <th scope="col" style="width:25%">Charges</th>
+              <th scope="col" style="width:35%">Commodity (Futures)</th>
+              <th scope="col" style="width:35%">Commodity (Options)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Brokerage</td>
+              <td>₹ 20 per order</td>
+              <td>₹ 20 per order</td>
+            </tr>
+            <tr>
+              <td>Transaction charges</td>
+              <td>MCX: Upto 0.0026% <br>
+                NCDEX: 0.006%</td>
+              <td>MCX: 0.05%</td>
+            </tr>
+            <tr>
+              <td>GST</td>
+              <td>18% On Brokerage + Transaction Charges + Sebi TO</td>
+              <td>18% On Brokerage + Transaction Charges + Sebi TO</td>
+            </tr>
+            <tr>
+              <td>Securities Transaction Tax (STT)</td>
+              <td>0.01% on Sell</td>
+              <td>0.05% on Sell</td>
+            </tr>
+            <tr>
+              <td>SEBI Turnover fees</td>
+              <td>0.0001% of the Turnover</td>
+              <td>0.0001% of the Turnover</td>
+            </tr>
+            <tr>
+              <td>Stamp Duty</td>
+              <td>0.002% on turnover of Buy Trades</td>
+              <td>0.003% on turnover of Buy Trades</td>
+            </tr>
+            <tr>
+              <td>IPFT</td>
+              <td>0.0005% per crore</td>
+              <td>0.0005% per crore</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="currency" role="tabpanel" aria-labelledby="currency-tab">
+        <table class="table table-bordered mt-5">
+          <thead>
+            <tr>
+              <th scope="col" style="width:25%">Charges</th>
+              <th scope="col" style="width:35%">Currency (Futures)</th>
+              <th scope="col" style="width:35%">Currency (Options)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Brokerage</td>
+              <td>₹ 20 per order</td>
+              <td>₹ 20 per order</td>
+            </tr>
+            <tr>
+              <td>Transaction charges</td>
+              <td>BSE: 0.00025% <br>
+                NSE: 0.0009%</td>
+              <td>BSE: 0.001% br
+                NSE: 0.035%</td>
+            </tr>
+            <tr>
+              <td>GST</td>
+              <td>18% On Brokerage + Transaction Charges + Sebi TO</td>
+              <td>18% On Brokerage + Transaction Charges + Sebi TO</td>
+            </tr>
+            <tr>
+              <td>Securities Transaction Tax (STT)</td>
+              <td>₹ 0</td>
+              <td>₹ 0</td>
+            </tr>
+            <tr>
+              <td>SEBI Turnover fees</td>
+              <td>0.0001% of the Turnover</td>
+              <td>0.0001% of the Turnover</td>
+            </tr>
+            <tr>
+              <td>Stamp Duty</td>
+              <td>0.001% on turnover of Buy Trades</td>
+              <td>0.001% on turnover of Buy Trades</td>
+            </tr>
+            <tr>
+              <td>IPFT</td>
+              <td>0.0005% per crore</td>
+              <td>0.0005% per crore</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="bg-note">
+      <p><span>Note:</span> Stamp Duty and STT are rounded off to the nearest rupee and all other charges to the nearest
+        2 decimals.</p>
+    </div>
+  </div>
+</section>
+
+<!--End of - 2nd section  tab table-->
+
+<!-- 3rd section Demat account -->
+<section class="demat">
+  <div class="container pricing-heading">
+    <h1>Demat account related charges</h1>
+    <table class="table table-bordered rounded-16 mt-5">
+      <thead>
+        <tr>
+          <th scope="col" style="width: 30%;">Account Opening Fees</th>
+          <th scope="col" style="width: 50%;">₹ 0 account opening charges.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Annual Maintenance Charges</th>
+          <td>₹ 25 per month</td>
+        </tr>
+        <tr>
+          <th scope="row">DP Transaction Charges</th>
+          <td>₹ 20 and ₹ 50 for BSDA client</td>
+        </tr>
+        <tr>
+          <th scope="row">Off-Market Charges</th>
+          <td>₹ 100</td>
+        </tr>
+        <tr>
+          <th scope="row">Pledge Charges</th>
+          <td>₹ 20 per request & ₹ 50 for BSDA clients</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- End of 3rd section Demat account -->
+
+<!--4th section  Other Charges -->
+<section class="demat">
+  <div class="container pricing-heading">
+    <h1>Other Charges</h1>
+    <table class="table table-bordered rounded-16 mt-5">
+      <thead>
+        <tr>
+          <th scope="col" style="width: 30%;">Platform Charges</th>
+          <th scope="col" style="width: 50%;">₹ 0 platform charges.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Auto-Square Off Charges</th>
+          <td>₹ 20 / order + GST. For intraday order automatically squared by our team before market closure.</td>
+        </tr>
+        <tr>
+          <th scope="row">Call & Trade</th>
+          <td>₹ 50 / order + GST. For every order placed through our trade desk.</td>
+        </tr>
+        <tr>
+          <th scope="row">Payment Gateway</th>
+          <td>₹ 0 charges on UPI payments & net banking.</td>
+        </tr>
+        <tr>
+          <th scope="row">Interest Charges</th>
+          <td>0.0438% per day on outstanding MTF and non MTF debit and non maintenance of 50:50 margin.</td>
+        </tr>
+        <tr>
+          <th scope="row">CUSA Charges</th>
+          <td>₹ 12.50 / instruction / ISIN + GST. For payin from CUSA while selling shares.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<!--End of - 4th section Other Charges-->
+
+<!-- 5th section  Disclaimer on pricing & charges-->
+<section class="disclaimer-bg">
+  <div class="container">
+    <h1>Disclaimer on pricing & charges</h1>
+    <p>Please note that brokerage charges that are calculated will be within the maximum rate as specified by SEBI and
+      the exchanges. All other statutory and regulatory charges are as per actuals.</p> <br>
+
+    <p> In addition to the charges mentioned here, ArihantPlus may offer additional products, offerings and value added
+      services that may be charged separately; any such charges or fees will be invoiced to the clients. Brokerage is
+      also charged on expired, exercised, and assigned options contracts. The above tariff, fees, pricing and charges
+      are subject to change, any change will be initmated to clients 30 days in advance and the same will be also
+      updated on the app and website of ArihantPlus. Clients are advised to check the same from time to time and stay
+      updated.</p> <br>
+
+    <p> All above charges mentioned are for retail customers / clients only. Charges for NRIs, Companies, Partnerships,
+      Trusts and HUFs will be different from the ones mentioned. Any services that require physical copies or offline
+      delivery will be charged differently and separately from the ones listed above. Clients are requested to note that
+      ArihantPlus is a full digital and technology solution and offerings provider for its investment products and any
+      physical / offline requests for services may have additional charges and take additional time.</p>
+  </div>
+</section>
+<!--End of 5th section  Disclaimer on pricing & charges-->
+
+<app-testimonial></app-testimonial>
+
+<app-download></app-download>
+<app-footer></app-footer>

@@ -1,0 +1,497 @@
+<section class="reg-main">
+  <div class="container" #target>
+    <div class="row">
+      <div class="col text-center align-content-center d-flex flex-column justify-content-center reg-content">
+        <app-common-leftportion></app-common-leftportion>
+      </div>
+      <div class="col pr-0">
+        <div class="reg-card card white register-page">
+
+          <article class="card-body p-0 right-bar-section">
+            <!-- <div class="row carousel-indicators text-sm-center text-md-left text-lg-left text-center ">
+              <button class="active"></button>
+              <button></button>
+              <button></button>
+            </div> -->
+            <h1
+              class="mt-3 mt-sm-3 mt-md-3 mt-lg-5  mb-sm-0 mb-0 py-sm-2 py-1 card-title text-sm-center text-md-left text-lg-left text-center">
+              Invest in a better tomorrow.</h1>
+            <p class="text-sm-center text-md-left text-lg-left text-center font-24 mobile-font-20">Trade equities,
+              futures, options, indices, ETFs on our all new mobile app ArihantPlus with superior performance & really
+              easy user experience.</p>
+
+            <form [formGroup]="registerform" (ngSubmit)="onSubmit()">
+
+              <div class=" my-5 text-sm-center text-md-left text-lg-left text-left">
+                <div class="row bg-white py-2 rounded-8" style="border: 1px solid #ddd;">
+                  <p class="my-auto ml-3">+91 |</p>
+                  <input id="user-input-mobile-number" class="my-auto mx-0 border-none" style="width: 160px;" #myinput
+                    type="tel" placeholder="Enter mobile number" maxlength="10" formControlName="mobilenumber" />
+                  <button class="btn btn-primary-green my-auto ml-auto mr-1" id="features-image-full-view" type="submit"
+                    aria-label="Get Started">
+                    Get Started
+                  </button>
+
+                  <button class="text-right ml-auto float-right" id="features-image-collapsed-view"
+                    aria-label="Get Started">
+                    <img alt="" src="assets/images/arrow-right.svg">&nbsp;
+                  </button>
+                </div>
+                <app-control-messages fieldName="Mobile Number" customeMessage="invalid_mobile_number | translate"
+                  [control]="registerform?.controls['mobilenumber']">
+                </app-control-messages>
+                <p class="text-black-64 mx-0 my-2 font-14">
+                  By signing up, I agree to the <b><a href="https://www.arihantcapital.com//termsandconditions"
+                      target="_blank" class="text-primary-green">T&C</a></b>, <b><a
+                      href="https://www.arihantcapital.com//privacyandsecurity" target="_blank"
+                      class="text-primary-green">Privacy Policy</a></b> and Tariff rates and give my consent to open
+                  Demat and Trading account with ArihnatPlus.
+                </p>
+              </div>
+
+              <app-common-banner-image></app-common-banner-image>
+
+              <div class=" text-sm-center text-md-left text-lg-left text-center font-16">
+                <img alt="" src="assets/images/icon-right-chevron.png" width="20px" height="20px" />
+                Download on <b><a class="mx-1 font-black"
+                    href="https://apps.apple.com/in/app/arihant-plus/id1643484698">iOS</a></b> and <b><a
+                    class="mx-1 font-black"
+                    href="https://play.google.com/store/apps/details?id=com.msf.acml&hl=en_IN&gl=US">Android</a></b>.
+              </div>
+
+              <div class=" mt-2 text-sm-center text-md-left text-lg-left text-center">
+                <div class="row rounded-16 p-3" style="background-color: #f6f6f6;">
+                  <div class="col-4" style="border-right: 1px solid #ddd;">
+                    <p class="m-0 p-0">
+                      <b class="m-0 p-0 font-black font-20">
+                        30+
+                      </b>
+                    </p>
+                    <p class="text-black-64 m-0 p-0">
+                      Years in the industry
+                    </p>
+                  </div>
+                  <div class="col-4" style="border-right: 1px solid #ddd;">
+                    <p class="m-0 p-0">
+                      <b class="m-0 p-0 font-black font-20">
+                        2 lac+
+                      </b>
+                    </p>
+                    <p class="text-black-64 m-0 p-0">
+                      Customers
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="m-0 p-0">
+                      <b class="m-0 p-0 font-black font-20">
+                        900+
+                      </b>
+                    </p>
+                    <p class="text-black-64 m-0 p-0">
+                      Investment centers
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" mt-2 text-sm-center text-md-left text-lg-left text-center">
+                <div class="row">
+                  <div class="col-md-1 my-auto">
+                    <img alt="" src="assets/images/icon-stars-awarded.png" width="32px" style="max-width:none;" />
+                  </div>
+                  <div class="col-md-11 my-auto font-16 mobile-font-14">
+                    Awarded Best Retail Brokerage (India) at Asia Money Broker’s Poll 2022 & 2021.
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="form-group mb-0">
+                <label for="email" class="req-control">mobile number</label>
+                <div class="input-group input-mobile">
+                  <div class="hr-dev">
+                    <select class="form-control">
+                      <option selected="91">+91</option>
+                    </select>
+                  </div>
+                  <input #myinput placeholder="Enter Mobile Number" type="tel" maxlength="10" formControlName="mobilenumber"
+                    class="form-control">
+                </div>
+                <app-control-messages fieldName="Mobile Number" customeMessage="invalid_mobile_number | translate" [control]="registerform?.controls['mobilenumber']">
+                </app-control-messages>
+              </div>  -->
+
+
+            </form>
+          </article>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+<div class="container text-center ">
+  <hr>
+</div>
+
+
+<!-- 2nd Section - Enjoy free trades -->
+<section class="bg-white ">
+  <div class="container ">
+    <div class="row justify-content-center">
+      <div class="col-md-6 my-2 ">
+        <div class="invest-sec mx-3">
+          <h2>
+            Invest like a pro
+          </h2>
+          <p>
+            Get the right tools & support to create long-term wealth.
+          </p>
+          <hr>
+          <ul class="font-black">
+            <li class="mt-2">
+              <img src="assets/images/tap.png" class="img-fluid pr-2" alt=""> Easy 2-click trade
+            </li>
+            <li class="mt-2">
+              <img src="assets/images/award.png" class="img-fluid pr-2" alt=""> Access to award-winning
+              institutional-grade research
+            </li>
+            <li class="mt-2">
+              <img src="assets/images/bullish.png" class="img-fluid pr-2" alt=""> After market (AMO) & good till date
+              (GTD) orders
+            </li>
+            <li class="mt-2">
+              <img src="assets/images/newspaper.png" class="img-fluid pr-2" alt=""> Easy-to-understand portfolio reports
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-md-6 my-2 ">
+        <div class="invest-sec mx-3">
+          <h2>
+            Trade like a pro
+          </h2>
+          <p>
+            Arihant Plus provides smart tools to help you up your game.
+          </p>
+          <hr>
+          <ul class="font-black">
+            <li class="mt-2">
+              <img src="assets/images/timing.png" class="img-fluid pr-2" alt=""> Superfast execution with advanced order
+              types
+            </li>
+            <li class="mt-2">
+              <img src="assets/images/trade.png" class="img-fluid pr-2" alt=""> Trade directly from charts & option
+              chain
+            </li>
+            <li class="mt-2">
+              <img src="assets/images/magnifying-glass.png" class="img-fluid pr-2" alt=""> Access advanced data
+              (FII/DII,
+              bulk-block data)
+              (GTD) orders
+            </li>
+            <li class="mt-2">
+              <img src="assets/images/shopping-basket.png" class="img-fluid pr-2" alt=""> Create & execute strategies
+              with basket order
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of - 2nd Section - Enjoy free trades -->
+
+<!-- 3rd Section - Power packed performance -->
+<section class="bg-white">
+  <div class="container px-3 py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center my-3">
+        <p class="font-20 mb-3">Trade simple with</p>
+        <h2 class="mb-5">The Power-packed<br>performance</h2>
+      </div>
+      <div class="col-md-5 mx-3">
+        <div class="my-4 rounded-32 p-4" style="background-color: #EFF9F1 !important;">
+          <div class="text-center">
+            <img alt="" src="assets/images/image-home-faster-execution.png" width="60%" />
+          </div>
+          <h3 class="text-center my-4">
+            Faster execution
+          </h3>
+          <ul class="text-left p-3 m-0 rounded-16 align-items-center" style="background-color: #D1EED7 !important;">
+            <li class="align-self-center font-18 font-black ml-3">Swipe to trade</li>
+            <li class="align-self-center font-18 font-black ml-3">Instant fund transfer with UPI</li>
+            <li class="align-self-center font-18 font-black ml-3">Lightening-fast orders</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-5 mx-3">
+        <div class="my-4 rounded-32 p-4" style="background-color: #EFF9F1 !important;">
+          <div class="text-center">
+            <img alt="" src="assets/images/image-home-research-calls.png" width="60%" />
+          </div>
+          <h3 class="text-center my-4">
+            Research calls
+          </h3>
+          <ul class="text-left p-3 m-0 rounded-16 align-items-center" style="background-color: #D1EED7 !important;">
+            <li class="align-self-center font-18 font-black ml-3">Expertise built over 30 years</li>
+            <li class="align-self-center font-18 font-black ml-3">In-depth research by award-winning financial analysts
+              for free</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-5 mx-3">
+        <div class="my-4 rounded-32 p-4" style="background-color: #EFF9F1 !important;">
+          <div class="text-center">
+            <img alt="" src="assets/images/image-home-easy-to-use-platform.png" width="60%" />
+          </div>
+          <h3 class="text-center my-4">
+            Easy-to-use platform
+          </h3>
+          <ul class="text-left p-3 m-0 rounded-16 align-items-center" style="background-color: #D1EED7 !important;">
+            <li class="align-self-center font-18 font-black ml-3">Apps optimized for all devices</li>
+            <li class="align-self-center font-18 font-black ml-3">Buy & sell stocks, derivatives & ETFs with ease</li>
+            <li class="align-self-center font-18 font-black ml-3">User-friendly & intuitive interface</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-5 mx-3">
+        <div class="my-4 rounded-32 p-4" style="background-color: #EFF9F1 !important;">
+          <div class="text-center">
+            <img alt="" src="assets/images/image-home-smart-tools.png" width="60%" />
+          </div>
+          <h3 class="text-center my-4">
+            Smart tools
+          </h3>
+          <ul class="text-left p-3 m-0 rounded-16 align-items-center" style="background-color: #D1EED7 !important;">
+            <li class="align-self-center font-18 font-black ml-3">Pro charting tools with 100+ indicators</li>
+            <li class="align-self-center font-18 font-black ml-3">Actionable research calls</li>
+            <li class="align-self-center font-18 font-black ml-3">Full suite of alerts and risk management tools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of - 3rd Section - Power packed performance -->
+
+<!-- 4th Section - Features image -->
+<section class="bg-white">
+  <div class="container px-0 text-center">
+    <img id="features-image-full-view" alt="" src="assets/images/image-mobile-features-web.png" width="100%" />
+    <img id="features-image-collapsed-view" alt="" src="assets/images/image-mobile-features-mob.png" width="100%" />
+  </div>
+</section>
+<!-- End of - 4th Section - Features image -->
+
+<!-- 5th Section - Trade with a trusted broker -->
+<section>
+  <div class="container px-3 py-5">
+    <div class="text-center my-3">
+      <p class="font-20 mb-3">#Trust #Trade #GrowWealth</p>
+      <h2 class="mb-5">Trade with a<br>trusted broker</h2>
+    </div>
+    <div class="row mx-auto my-auto">
+      <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#recipeCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#recipeCarousel" data-slide-to="1"></li>
+          <li data-target="#recipeCarousel" data-slide-to="2"></li>
+        </ol> -->
+        <div class="carousel-inner w-100" aria-labelledby="pass2Label" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-md-4">
+              <div class="my-4 rounded-32 p-5 text-center" style="background-color: #DFF3E3 !important;">
+
+                <div class="text-center pb-4">
+                  <img alt="" src="assets/images/icon-protection.png" width="40px" />
+                </div>
+                <h3 class="font-20">
+                  Protection
+                </h3>
+                <p class="font-20 text-black-64">
+                  Trade with confidence on a battle-tested platform with top-tier security.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="my-4 rounded-32 p-5 text-center" style="background-color: #DFF3E3 !important;">
+                <div class="text-center pb-4">
+                  <img alt="" src="assets/images/icon-privacy.png" width="40px" />
+                </div>
+                <h3 class="font-20">
+                  Privacy
+                </h3>
+                <p class="font-20 text-black-64">
+                  Your data is yours, you decide what to share on your ArihantPlus profile.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="my-4 rounded-32 p-5 text-center" style="background-color: #DFF3E3 !important;">
+                <div class="text-center pb-4">
+                  <img alt="" src="assets/images/icon-low-brokerage.png" width="40px" />
+                </div>
+                <h3 class="font-20">
+                  Low brokerage
+                </h3>
+                <p class="font-20 text-black-64">
+                  Pay less brokerage without compromising on support or service.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="my-4 rounded-32 p-5 text-center" style="background-color: #DFF3E3 !important;">
+                <div class="text-center pb-4">
+                  <img alt="" src="assets/images/icon-reliability.png" width="40px" />
+                </div>
+                <h3 class="font-20">
+                  Reliability
+                </h3>
+                <p class="font-20 text-black-64">
+                  Transparency, ethical practices and human support are core to what we do.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="my-4 rounded-32 p-5 text-center" style="background-color: #DFF3E3 !important;">
+                <div class="text-center pb-4">
+                  <img alt="" src="assets/images/icon-30-years-excellence.png" width="40px" />
+                </div>
+                <h3 class="font-20">
+                  30 years of excellence
+                </h3>
+                <p class="font-20 text-black-64">
+                  We’ve been helping investors meet their financial goals for three decades.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev w-auto" aria-label="Prev" href="#recipeCarousel" data-target="#recipeCarousel"
+          role="button" data-slide="prev">
+          <i class="fa fa-chevron-left"></i>
+          <!-- <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
+            aria-hidden="true"></span>
+          <span class="sr-only">Previous</span> -->
+        </a>
+        <a class="carousel-control-next w-auto" aria-label="Next" href="#recipeCarousel" data-target="#recipeCarousel"
+          role="button" data-slide="next">
+          <i class="fa fa-chevron-right"></i>
+          <!-- <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
+            aria-hidden="true"></span>
+          <span class="sr-only">Next</span> -->
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of - 5th Section - Trade with a trusted broker -->
+
+<!-- 6th Section - Price Plans -->
+<section class="bg-white">
+  <div class="container text-center px-3 py-5">
+    <p class="font-20">
+      The ArihantPlus Guarantee
+    </p>
+    <h2>
+      Honest Prices. Guaranteed.
+    </h2>
+    <p class="font-20">
+      No hidden charges ever
+    </p>
+
+    <app-pricing-card></app-pricing-card>
+
+    <div class="reg-card my-4">
+      <button routerLink="pricing" class="btn btn-outline-primary-blue mt-3 mr-3" type="button"
+        style="background: none;">
+        View Price in Details
+      </button>
+      <button (click)="scroll(target)" class="btn btn-primary-green mt-3" type="button">
+        Get Started Now
+      </button>
+    </div>
+  </div>
+</section>
+<!-- End of - 6th Section - Price Plans -->
+
+<!-- 7th Section - Hear from our clients -->
+<app-testimonial></app-testimonial>
+<!-- End of - 7th Section - Hear from our clients -->
+<!-- <div class="container text-center">
+  <hr>
+</div> -->
+<!-- 8th Section - customer support -->
+<section class="bg-gradient-white-top-grey-bottom">
+  <div class="container px-3 py-5">
+    <div class="row">
+      <div class="col-md-6 my-auto pt-5 pb-5 text-center">
+        <img class="mb-5" alt="" src="assets/images/image-home-customer-support.png" width="80%" />
+      </div>
+      <div class="col-md-6 my-auto text-left-md-center">
+        <h2>
+          We’ve always got your back!
+        </h2>
+        <p class="font-20 my-5">
+          In case you ever get stuck, write to us at
+          <br>
+          <a class="link link-primary-green" href="mailto: contactus@arihantcapital.com">
+            contactus@arihantcapital.com
+          </a>
+        </p>
+        <div class="bg-light-green rounded-16 reg-card desktop-view justify-content-between"
+          style="padding: 4px 4px 4px 16px; gap: 8px;">
+          <div class="d-flex font-16">
+            <div class="mr-auto text-black-64 align-self-center">or, connect with us on Whatsapp</div>
+            <div><button class="btn btn-primary-green mt-0 justify-content-between" style="background: #2AA81A;"
+                (click)="whatsAppLink()">
+                <img alt="" src="assets/images/icon-whatsapp.png" width="24px" />
+                0731-4217003
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="bg-light-green rounded-16 mobile-view" style="align-items: center; gap: 8px;">
+          <p class="my-auto text-black-64 px-2 pt-2 mb-1">
+            or, connect with us on Whatsapp testest
+          </p>
+
+          <div class="reg-card mt-1 ">
+            <button class="btn btn-primary-green mt-0 mb-2 font-16 p-1" style="background: #2AA81A;width: 90%;"
+              (click)="whatsAppLink()">
+              <img alt="" src="assets/images/icon-whatsapp.png" width="40px" />
+              0731-4217003
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of - 8th Section - customer support -->
+
+
+<app-download></app-download>
+
+<!-- 7th Section - Download app now -->
+<!-- End of - 7th Section - Download app now -->

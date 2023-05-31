@@ -1,0 +1,95 @@
+<!-- <header>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light row">
+      <div class="d-flex align-item-center">
+        <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active">
+          <img src="{{global.companyLogoUrl}}" alt="" style="width: 159px;">
+        </a>
+      </div> 
+      <div class="logout-nav" *ngIf="isLoggedIn">
+        <a  href="javascript:void(0)" (click)='logoutApplication()' class="logout link">Logout <img
+            alt="" src="assets/images/logout.svg"></a>
+      </div>
+    </nav> 
+  </div>
+</header> -->
+
+<!-- Header and content -->
+<header class="bg-white shadow-sm">
+  <div class="container">
+    <div class="row my-3">
+      <!-- collapsed view header options -->
+      <div id="header-bar-collapsed-view" class="col-2 text-left">
+        <img alt="" src="assets/images/icon-menu-collapsed-view.png" onclick="open_OverflowMenuOverlay()" width="16px" />
+      </div>
+      <div id="header-bar-collapsed-view" class="col-5 text-left pl-0">
+        <a href="#first-section" aria-label="Arihnat Plus">
+          <img alt="" src="assets/images/logo-arihant-plus-primary.png" width="100%" />
+        </a>
+      </div>
+      <!-- End of - collapsed view header options -->
+        <div id="header-bar-collapsed-view" class="col-5 mobile-header text-right">
+          <a href="https://web.arihantplus.com/base/login-name" target="_blank" aria-label="Login"> <img class="img-fluid mr-1" src="assets/images/login.png" alt=""></a> 
+           <a href="https://ekyc.arihantcapital.com/" target="_blank" aria-label="Open an account"> <img class="img-fluid"  src="assets/images/account.png" alt=""></a>
+        </div>
+      <!-- </div> -->
+
+      
+      <div class="col-4 " id="header-bar-full-view">
+        <a href="#first-section">
+          <img alt="" src="assets/images/logo-arihant-plus-primary.png"  />
+        </a>
+      </div>
+      <!-- full view header options -->
+      <div id="header-bar-full-view" class="col-8 text-right my-auto">
+        <a href="https://support.arihantcapital.com/support/home"  target="_blank" class="link link-black">Help</a>
+        <a href="#get-app" class="link link-black">Get App</a>
+        <a class="login-btn ml-3" href="https://web.arihantplus.com/base/login-name" target="_blank">Login</a>
+        <a class="open-btn ml-1" href="https://ekyc.arihantcapital.com/" target="_blank">Open an account</a>
+      </div>
+      <!-- End of - full view header options -->
+<!-- collapsed view header options -->
+      <!-- <div id="header-bar-collapsed-view" class="col-6 text-left">
+      <button class="login-btn" style="font-size: 12px;">
+        Login
+      </button>
+      <button class="open-btn ml-1">
+        Open an account
+      </button>
+      </div> -->
+      
+      
+
+    </div>
+  </div>
+</header>
+
+<!-- Overlay for overflow menu -->
+<div id="overlay-overflow-menu" class="w-100 vh-100 bg-black-80 position-fixed">
+  <div class="w-75 vh-100 mr-auto bg-white shadow">
+    <div class="row p-3">
+      <div class="col-6 my-auto">
+        <img alt="" src="assets/images/logo-arihant-plus-primary.png"   />
+      </div>
+      <div class="col-6 text-right my-auto">
+        <img alt="" src="assets/images/icon-close.png" onclick="close_OverflowMenuOverlay()" width="32px" />
+      </div>
+    </div>
+    <div class="row mt-4 px-3">
+      <a class="link link-black w-100 m-1 px-3 text-left"  href="https://support.arihantcapital.com/support/home" target="_blank">
+        Help 
+      </a>
+      <a href="#get-app">
+        <button class="link link-black w-100 m-1 px-3 text-left" onclick="close_OverflowMenuOverlay()">
+          Get App
+        </button>
+      </a>
+      <!-- <a href="https://ekyc.arihantcapital.com/" target="_blank" class="link link-primary-green w-100 m-1 px-3 text-left">
+        Login/Register <img alt="" src="assets/images/icon-login-register.png" width="16px" />
+      </a> -->
+    </div>
+  </div>
+</div>
+<!-- End of - Overlay for overflow menu -->
+
+ 
