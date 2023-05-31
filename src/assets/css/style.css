@@ -2237,7 +2237,11 @@ a
 }
 
 .pricing-table .nav-pills .nav-link{
-  padding: 0 13px;
+  padding: 0 10px;
+}
+
+.pricing-table, .demat{
+  margin-top: 40px;
 }
 
 }
