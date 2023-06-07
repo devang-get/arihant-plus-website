@@ -3,9 +3,9 @@ export const environment = {
   baseUrl: 'https://g5vvmcu2o0.execute-api.ap-south-1.amazonaws.com/production/', // dev-site Live 
   baseUrlOfUser: 'https://tdpzcnu54j.execute-api.ap-south-1.amazonaws.com/production/', // dev-site Live 
   image_upload_url: 'https://e1sltwx3x5.execute-api.ap-south-1.amazonaws.com/production/',   // dev-site Live 
-  languageParamUrl: 'https://arihantplus.com/assets/', // dev-site Live
+  languageParamUrl: 'https://www.arihantplus.com/assets/', // dev-site Live
   client_id: 'UMC01C9FA0',  // dev-site Live  arihant UAT : 1396FF37 , Arihant Plust : UMC01C9FA0
-  redirect_uri: 'https://arihantplus.com/redirect', // dev-site Live
+  redirect_uri: 'https://www.arihantplus.com/redirect', // dev-site Live
   golapp: 'http://goldapp.getprosper.in', // Gold app Live
   logo_url: 'assets/images/logo-arihant-plus-primary.png', // dev-site Live
   footer_logo: 'assets/images/logo-arihant-plus-primary.png',
