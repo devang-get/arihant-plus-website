@@ -162,7 +162,7 @@ export class RegisterComponent implements OnInit, AfterViewInit {
       this.authenticationService.commonLoginApi(paramObj).subscribe((res: any) => {
         if (res.success) {
           if (res.result) {
-            const url = `https://ekyc.arihantcapital.com/mobile-verify?params=${res?.result}`;
+            const url = `https://signup.arihantplus.com/mobile-verify?params=${res?.result}`;
             window.location.href = url;
           }
         } else {
