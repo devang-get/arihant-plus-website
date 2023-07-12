@@ -5086,6 +5086,10 @@ section.dashboard select.form-control {
   margin-bottom: 15px
 }
 
+.footcontact .f_head {
+  color: #fff !important;
+}
+
 .footcontact h3,
 .footcontact h3 a {
   font-family: Arial;
@@ -5093,7 +5097,7 @@ section.dashboard select.form-control {
   line-height: 18px;
   color: #2f2f2f;
   margin-bottom: 20px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .footcontact h3 li {
